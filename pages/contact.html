@@ -1,0 +1,78 @@
+---
+layout: pages
+permalink: /contact/
+category: contact
+title: Contact Us
+keywords: mobile phone repair tools
+description: Mobile phone repairing tools.Our high quality and young team is the powerful strength to satisfy client demand.In the future, we will try harder,and focus more on clients demands.
+---
+<div class="container mt60">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="contact-box mb30">
+        <div itemscope itemtype="http://schema.org/Organization">
+          <h3><span itemprop="name">{{ site.company }}</span></h3>
+          <ul>
+            <li><b>Address:</b> <span itemprop="address">{{ site.address }}</span></li>
+            <li><b>Phone:</b> <a href="tel:{{ site.tel1 }}"><span itemprop="telephone">{{ site.tel1 }}</span></a></li>
+            <li><b>Phone:</b> <a href="tel:{{ site.tel1 }}"><span itemprop="telephone">{{ site.tel2 }}</span></a></li>
+            <li><b>Phone:</b> <a href="tel:{{ site.tel1 }}"><span itemprop="telephone">{{ site.tel3 }}</span></a></li>
+            <li><b>Email:</b> <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></li>
+            <li>
+              <b>Social Media:</b>
+              <div class="social-icons">
+                <a itemprop="url" href="{{ site.facebook }}" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a itemprop="url" href="{{ site.twitter }}" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a itemprop="url" href="{{ site.linkedin }}" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                <a itemprop="url" href="{{ site.github }}" class="social-icon" title="Github"><i class="fa fa-github"></i></a>
+                <a itemprop="url" href="{{ site.youtube }}" class="social-icon" title="Youtube"><i class="fa fa-youtube"></i></a>
+                <a data-toggle="modal" data-target="#myModal" class="social-icon" title="WeChat"><i class="fa fa-weixin"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb40"></div>
+  <div class="row">
+    <div class="col-md-5">
+      <a href="https://goo.gl/maps/xQut6zU7PvoJeERj7" target="_blank"><img src="/images/contact/map.jpg" class="img-thumbnail mb30" alt="Sunshine Google Map"></a>
+    </div>
+    <div class="col-md-7">
+      <h2 class="mb30">Contact Us Now</h2>
+      <form role="form" action="{{ site.oswweb-mail-url }}/exinxun-com-feedback.php" method="POST">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group">
+              <span class="input-group-addon">Your name*</span>
+              <input type="text" name="name" class="form-control" placeholder="Enter your full name">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-group">
+              <span class="input-group-addon">Email address*</span>
+              <input type="email" name="email" class="form-control" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-group">
+              <span class="input-group-addon">Phone number</span>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter your phone">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-group textarea-container">
+              <span class="input-group-addon">Your Message*</span>
+              <textarea name="xinxi" class="form-control" cols="30" rows="3" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-custom btn-block">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="mb60"></div>

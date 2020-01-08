@@ -1,0 +1,22 @@
+---
+layout: pages
+permalink: /regulated-power-supply/
+category: products
+title: Regulated Power Supply
+keywords: mobile phone repair tools
+description: Sunshine regulated power supply long service life, low repair rate, suitable for repairing smartphones. mobile phone repair tools you need to know.
+---
+<div class="bg-gray border pt70 pb30">
+  <div class="container">
+    <div class="row">{% for post in site.categories["products"] %}{% if post.regulated-power-supply == 'regulated-power-supply' %}
+      <div class="col-sm-6 col-md-3">
+        <div itemscope itemtype="http://schema.org/Product">
+          <div class="thumbnail">
+            <a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="image" src="/images/products/{{ post.image }}-1.jpg" alt="{{ post.title }}"></a>
+            <div class="caption text-center"><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></div>
+          </div>
+        </div>
+      </div>{% endif %}{% endfor %}
+    </div>
+  </div>
+</div>

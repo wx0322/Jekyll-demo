@@ -1,0 +1,14 @@
+---
+layout: null
+---
+{
+  "code" : 0 ,
+  "data" : [
+    {% for post in site.categories["products"] %}
+    {
+      "title" : "{{ post.title }} - {{ post.type }}",
+      "url" : "{{ post.url }}"
+    }{% if forloop.rindex != 1  %},{% endif %}
+    {% endfor %}
+  ]
+}

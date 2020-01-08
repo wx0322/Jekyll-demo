@@ -1,0 +1,30 @@
+---
+layout: pages
+permalink: /news/
+category: news
+title: News
+keywords: mobile phone repair tools
+description: Sunshine is specilized in mobile phone repairing tools.As a global leading one-step service platform in China,we aim to provide you best products.
+---
+<div class="container mt50 pb30">
+  <div class="blog-row">
+    <div id="blog-item-container" class="max-col-3">{% for post in site.categories["news"] %}
+      <article class="entry entry-grid">
+        <div itemscope itemtype="http://schema.org/Article">
+          <div class="entry-media">
+            <figure><a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="thumbnailUrl" src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a></figure>
+            <div class="entry-meta">
+              <span itemprop="dateCreated"><i class="fa fa-calendar"></i> {{ post.date | date:"%d %b %Y" }}</span>
+              <a><i class="fa fa-tag"></i> {{ post.keywords }}</a>
+            </div>
+          </div>
+          <h2 class="entry-title"><i class="fa fa-file-image-o"></i><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></h2>
+          <div class="entry-content">
+            <p><span itemprop="description">{{ post.description }}</span></p>
+            <a itemprop="url" href="{{ site.url }}{{ post.url }}" class="readmore">Read more<i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </article>{% endfor %}
+    </div>
+  </div>
+</div>
